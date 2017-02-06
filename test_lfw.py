@@ -69,8 +69,6 @@ feature_extractor = mx.model.FeedForward(
 # prepare for the image
 url1 = '/home/galaxyeye-tech/docs/deepid/joint_bayesian/data/extra_pairs_path.txt'
 url2 = '/home/galaxyeye-tech/docs/deepid/joint_bayesian/data/intra_pairs_path.txt'
-#url1 = './data/galaxy_extra.txt'
-#url2 = './data/galaxy_intra.txt'
 
 ratio_list1 = []
 ratio_list2 = []
@@ -99,7 +97,7 @@ while True:
         # img_feature = jb_model.data_pre(img_feature)
         ratio_list1.append(
              cos_dis(img_feature[0], img_feature[1]))
-#            jb_model.Verify(A, G, img_feature[0], img_feature[1]))
+             # jb_model.Verify(A, G, img_feature[0], img_feature[1]))
     else:
         break
 # print img_feature[0]
@@ -113,7 +111,7 @@ while True:
         # img_feature = jb_model.data_pre(img_feature)
         ratio_list2.append(
              cos_dis(img_feature[0], img_feature[1]))
-#            jb_model.Verify(A, G, img_feature[0], img_feature[1]))
+             # jb_model.Verify(A, G, img_feature[0], img_feature[1]))
     else:
         break
 
